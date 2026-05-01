@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="JavaScriptの課題作品です">
+  <title>NACRE Nail Atelier | 心斎橋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">NACRE</a>
+      <ul class="nav-links">
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#services">メニュー</a></li>
+        <li><a href="#gallery">ギャラリー</a></li>
+        <li><a href="#voice">お客様の声</a></li>
+        <li><a href="#contact">ご予約</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- モバイルメニュー -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#concept" class="mobile-link">コンセプト</a>
+    <a href="#services" class="mobile-link">メニュー</a>
+    <a href="#gallery" class="mobile-link">ギャラリー</a>
+    <a href="#voice" class="mobile-link">お客様の声</a>
+    <a href="#contact" class="mobile-link">ご予約</a>
+    <a href="#access" class="mobile-link">アクセス</a>
+    <a href="#about" class="mobile-link">このサイトについて</a>
+  </div>
+
+  <!-- ヒーロー -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Nail Atelier ・ 梅田</p>
+      <h1 class="hero-title">あなたの指先に、<em>光</em>を。</h1>
+      <p class="hero-sub">真珠のような輝きをモチーフに、一本一本に魂を込めるネイルアトリエ。</p>
+      <a href="#services" class="btn-primary">メニューを見る</a>
+    </div>
+    <div class="hero-nail-chips">
+      <div class="nail-chip"></div>
+      <div class="nail-chip"></div>
+      <div class="nail-chip"></div>
+      <div class="nail-chip"></div>
+      <div class="nail-chip"></div>
+      <div class="nail-chip"></div>
+    </div>
+  </section>
+
+  <!-- コンセプト -->
+  <section id="concept">
+    <div class="section-inner">
+      <h2 class="section-title">About NACRE</h2>
+      <p class="section-lead">NACREとはフランス語で「真珠」。内側から滲み出るような光沢と唯一無二の輝きをコンセプトに、大阪・梅田に誕生したネイルアトリエです。</p>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <p class="stat-num">3名</p>
+          <p class="stat-label">在籍ネイリスト</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num">8年</p>
+          <p class="stat-label">平均経験年数</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num">2,000+</p>
+          <p class="stat-label">累計施術数</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num">★ 4.9</p>
+          <p class="stat-label">平均評価</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス -->
+  <section id="services">
+    <div class="section-inner">
+      <h2 class="section-title">メニュー</h2>
+      <p class="section-note">すべての価格は税込み表示です。</p>
+
+      <!-- タブボタン -->
+      <div class="tab-buttons">
+        <button class="tab-btn active" id="btn-gel" type="button">ジェルネイル</button>
+        <button class="tab-btn" id="btn-art" type="button">ネイルアート</button>
+        <button class="tab-btn" id="btn-care" type="button">ケアメニュー</button>
+      </div>
+
+      <!-- タブパネル -->
+      <div class="tab-panel active" id="tab-gel">
+        <div class="service-card">
+          <h3>ワンカラーコース</h3>
+          <p>シンプルで美しいワンカラー。上品な光沢が長続きする定番の人気メニューです。</p>
+          <p class="price">\6,600 <span>/ 手10本</span></p>
+        </div>
+        <div class="service-card">
+          <h3>グラデーションコース</h3>
+          <p>繊細なグラデーションが指先に奥行きをプラス。大人の女性に人気の上質な仕上がり。</p>
+          <p class="price">\8,800 <span>/ 手10本</span></p>
+        </div>
+        <div class="service-card">
+          <h3>フレンチコース</h3>
+          <p>クリアでシャープなラインが美しいフレンチジェル。オフィスからパーティーまで対応。</p>
+          <p class="price">\7,700 <span>/ 手10本</span></p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-art">
+        <div class="service-card">
+          <h3>デザインコース</h3>
+          <p>季節やトレンドを取り入れたフルデザイン。ご要望に応じてオーダーも承ります。</p>
+          <p class="price">\12,000? <span>/ 手10本</span></p>
+        </div>
+        <div class="service-card">
+          <h3>ストーンアートコース</h3>
+          <p>スワロフスキーや天然石を使用したラグジュアリーアート。特別な日のために。</p>
+          <p class="price">\14,000? <span>/ 手10本</span></p>
+        </div>
+        <div class="service-card">
+          <h3>手書きアートコース</h3>
+          <p>フローラル・アニマル・ジオメトリックなど、ネイリストが丁寧に手描きするアート。</p>
+          <p class="price">\15,000? <span>/ 手10本</span></p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-care">
+        <div class="service-card">
+          <h3>オフ&amp;ケアコース</h3>
+          <p>前回ネイルのオフから丁寧に行う、健やかな爪を取り戻すケアコース。</p>
+          <p class="price">\3,300 <span>/ 手10本</span></p>
+        </div>
+        <div class="service-card">
+          <h3>ハンドケアコース</h3>
+          <p>スクラブ・パラフィンパック・保湿マッサージのトリプルケアで、手元から若返る贅沢な時間。</p>
+          <p class="price">\5,500 <span>/ 手10本</span></p>
+        </div>
+        <div class="service-card">
+          <h3>パラジェルコース</h3>
+          <p>爪にやさしいパラジェル施術。デリケートな爪の方にもおすすめ。</p>
+          <p class="price">\9,900 <span>/ 手10本</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ネイルギャラリー -->
+  <section id="gallery">
+    <div class="section-inner">
+      <h2 class="section-title">ネイルギャラリー</h2>
+      <p class="section-lead">施術サンプルをご覧ください。スワイプで操作できます。</p>
+    </div>
+    <!--
+      gallery-outer は section-inner の外に置いてフル幅で表示する。
+      画像を追加する場合は .gallery-slide を増やしてください。
+      JavaScriptが自動で複製するので、1セット分だけ書けばOKです。
+    -->
+    <div class="gallery-outer" id="galleryOuter">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide"><img src="image/ネイル/1.jpeg" alt="ネイルサンプル1"></div>
+        <div class="gallery-slide"><img src="image/ネイル/2.jpeg" alt="ネイルサンプル2"></div>
+        <div class="gallery-slide"><img src="image/ネイル/3.jpeg" alt="ネイルサンプル3"></div>
+        <div class="gallery-slide"><img src="image/ネイル/4.jpeg" alt="ネイルサンプル4"></div>
+        <div class="gallery-slide"><img src="image/ネイル/5.jpeg" alt="ネイルサンプル5"></div>
+        <div class="gallery-slide"><img src="image/ネイル/6.jpeg" alt="ネイルサンプル6"></div>
+        <div class="gallery-slide"><img src="image/ネイル/7.jpeg" alt="ネイルサンプル7"></div>
+        <div class="gallery-slide"><img src="image/ネイル/8.jpeg" alt="ネイルサンプル8"></div>
+        <div class="gallery-slide"><img src="image/ネイル/9.jpeg" alt="ネイルサンプル9"></div>
+        <div class="gallery-slide"><img src="image/ネイル/10.jpeg" alt="ネイルサンプル10"></div>
+        <div class="gallery-slide"><img src="image/ネイル/11.jpeg" alt="ネイルサンプル11"></div>
+        <div class="gallery-slide"><img src="image/ネイル/12.jpeg" alt="ネイルサンプル12"></div>
+        <div class="gallery-slide"><img src="image/ネイル/13.jpeg" alt="ネイルサンプル13"></div>
+        <div class="gallery-slide"><img src="image/ネイル/14.jpeg" alt="ネイルサンプル14"></div>
+        <div class="gallery-slide"><img src="image/ネイル/15.jpeg" alt="ネイルサンプル15"></div>
+        <div class="gallery-slide"><img src="image/ネイル/16.jpeg" alt="ネイルサンプル16"></div>
+        <div class="gallery-slide"><img src="image/ネイル/17.jpeg" alt="ネイルサンプル17"></div>
+        <div class="gallery-slide"><img src="image/ネイル/18.jpeg" alt="ネイルサンプル18"></div>
+        <div class="gallery-slide"><img src="image/ネイル/19.jpeg" alt="ネイルサンプル19"></div>
+        <div class="gallery-slide"><img src="image/ネイル/20.jpeg" alt="ネイルサンプル20"></div>
+      </div>
+    </div>
+  </section>
+  <!-- ネイリスト紹介(過去の私の写真と、許可取得済みの友人の写真に強力な加工をかけ別人レベルにし、生成AIにて編集を行いネイリストっぽくしました) -->
+  <section id="stylists">
+    <div class="section-inner">
+      <h2 class="section-title">ネイリスト紹介</h2>
+      <div class="stylist-grid">
+
+        <div class="stylist-card">
+          <div class="stylist-img-wrap">
+            <img src="image/ネイリスト/nailist1.png" alt="田中 由紀" class="stylist-img" style="object-position: center 20%; transform: scale(1.0); transform-origin: center 50%;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="stylist-img-placeholder">Y</div>
+          </div>
+          <p class="stylist-name">田中 由紀</p>
+          <p class="stylist-role">トップネイリスト（歴15年）</p>
+          <p class="stylist-fee">指名料：1,000円</p>
+          <p class="stylist-msg">「お爪の状態に合わせたご提案を大切にしています。モチの良さを損なわず、自爪もできるだけ傷めないハイクオリティな仕上がりにより、長く指先の綺麗をお楽しみいただけます」</p>
+        </div>
+
+        <div class="stylist-card">
+          <div class="stylist-img-wrap">
+            <img src="image/ネイリスト/nailist2.jpg" alt="中村 さくら" class="stylist-img" style="object-position: center -10%; transform: scale(1.2); transform-origin: center 50%;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="stylist-img-placeholder">S</div>
+          </div>
+          <p class="stylist-name">中村 さくら</p>
+          <p class="stylist-role">ネイリスト（歴8年）</p>
+          <p class="stylist-fee">指名料：500円</p>
+          <p class="stylist-msg">「繊細なアートが得意です。ご希望のイメージを是非余すことなくお聞かせください。ご予算を踏まえて最適なデザインをご提案させていただきます」</p>
+        </div>
+
+        <div class="stylist-card">
+          <div class="stylist-img-wrap">
+            <img src="image/ネイリスト/nailist3.png" alt="林 美咲" class="stylist-img" style="object-position: center 20%; transform: scale(1.0); transform-origin: center 50%;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="stylist-img-placeholder">M</div>
+          </div>
+          <p class="stylist-name">林 美咲</p>
+          <p class="stylist-role">ネイリスト（歴5年）</p>
+          <p class="stylist-fee">指名料：500円</p>
+          <p class="stylist-msg">「初めての方も安心してお越しください。丁寧な説明と施術を心がけています」</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- お客様の声 -->
+  <section id="voice">
+    <div class="section-inner">
+      <h2 class="section-title">お客様の声</h2>
+      <div class="voice-grid">
+        <div class="voice-card">
+          <p class="stars">★★★★★</p>
+          <p class="voice-text">「丁寧なカウンセリングで理想のデザインを実現してもらいました。仕上がりが本当に美しくて友人にたくさん褒めてもらいました」</p>
+          <p class="voice-name">M.K. ? 30代 主婦</p>
+        </div>
+        <div class="voice-card">
+          <p class="stars">★★★★★</p>
+          <p class="voice-text">「爪が薄くて悩んでいたのですが、パラジェルで傷まずに施術してもらえて感激。空間も落ち着いていて毎月通いたい場所です」</p>
+          <p class="voice-name">Y.T. ? 20代 学生</p>
+        </div>
+        <div class="voice-card">
+          <p class="stars">★★★★★</p>
+          <p class="voice-text">「ストーンアートをお願いしたのですが、想像以上にゴージャスに仕上げていただきました。持ちも最高です」</p>
+          <p class="voice-name">A.N. ? 40代 会社員</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご予約・お問い合わせフォーム -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">ご予約・お問い合わせ</h2>
+      <p class="section-lead">下記フォームにご入力のうえ、送信ボタンをクリックしてください。</p>
+
+      <div class="form-wrap">
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="inputName">お名前 <span class="required">必須</span></label>
+            <input type="text" id="inputName" placeholder="例）山田 花子">
+            <p class="form-error" id="errorName"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="inputMenu">ネイリスト指名<span class="required">必須</span></label>
+            <select id="inputnailtechnician">
+              <option value="">-- 選択してください --</option>
+              <option value="なし">指名なし</option>
+              <option value="田中">田中（+1,000円）</option>
+              <option value="中村">中村（+500円）</option>
+              <option value="林">林（+500円）</option>
+            </select>
+            <label for="inputMenu">ご希望メニュー<span class="required">必須</span></label>
+            <select id="inputMenu">
+              <option value="">-- 選択してください --</option>
+              <option value="ワンカラーコース">ワンカラーコース</option>
+              <option value="グラデーションコース">グラデーションコース</option>
+              <option value="フレンチコース">フレンチコース</option>
+              <option value="デザインコース">デザインコース</option>
+              <option value="ストーンアートコース">ストーンアートコース</option>
+              <option value="手書きアートコース">手書きアートコース</option>
+              <option value="オフ&ケアコース">オフ&amp;ケアコース</option>
+              <option value="ハンドケアコース">ハンドケアコース</option>
+              <option value="パラジェルコース">パラジェルコース</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">ご要望・ご質問 </label>
+            <textarea id="inputMessage" rows="5" placeholder="ご要望やご質問、その他何かあれば自由にご記入ください（200文字以内）" maxlength="200"></textarea>
+            <p class="char-count"><span id="charCount">0</span> / 200文字</p>
+            <p class="form-error" id="errorMessage"></p>
+          </div>
+
+          <button type="submit" class="btn-primary" id="submitBtn">内容を確認する</button>
+        </form>
+
+        <!-- 確認メッセージ（送信前は非表示） -->
+        <div class="form-result" id="formResult">
+          <h3>以下の内容で承りました</h3>
+          <dl>
+            <dt>お名前</dt>
+            <dd id="resultName"></dd>
+            <dt>指名ネイリスト</dt>
+            <dd id="resultneiltechnician"></dd>
+            <dt>ご希望メニュー</dt>
+            <dd id="resultMenu"></dd>
+            <dt>ご要望・ご質問</dt>
+            <dd id="resultMessage"></dd>
+          </dl>
+          <p class="result-note">お問い合わせありがとうございます。確認次第順次担当者よりご連絡いたします。3営業日以内に返信がなかった場合、迷惑メールフォルダをご確認ください。</p>
+          <button type="button" class="btn-reset" id="resetBtn">別の内容を送る</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section id="access">
+    <div class="section-inner">
+      <h2 class="section-title">アクセス</h2>
+      <div class="access-grid">
+        <div>
+          <p><strong>NACRE Nail Atelier</strong></p>
+          <p>〒530-0001<br>大阪府大阪市北区梅田2丁目X-XX<br>ハービスプラザ 6F</p>
+          <p class="access-hours">
+            火?金 11:00?20:00<br>
+            土・日 10:00?19:00<br>
+            <span class="holiday">月曜定休</span>
+          </p>
+          <p>TEL: 12-3456-7890</p>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=梅田駅,大阪市北区&output=embed"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="NACRE Nail Atelier へのアクセスマップ">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- このサイトについて -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title">このサイトについて</h2>
+      <p class="section-lead">職業訓練校でのJavaScript学習の作品として制作した、架空のネイルサロンのウェブサイトです。</p>
+
+      <section class="about-block">
+        <h3>使用したライブラリ</h3>
+        <ul>
+          <li>
+            <cite><a href="https://jquery.com/" target="_blank">jQuery</a></cite>
+            <p>バージョン 3.7.1 / MIT ライセンス</p>
+            <p>タブ切替・ハンバーガーメニュー・スムーススクロール・フォーム・ギャラリースライダーの実装に使用。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-block">
+        <h3>参考にしたウェブサイト</h3>
+        <ul>
+          <li>
+            <cite><a href="https://jquery.com/license/" target="_blank">jQuery License | jQuery</a></cite>
+            <p>jQueryのライセンス（MIT）確認のために参照。</p>
+          </li>
+          <li>
+            <cite><a href="https://api.jquery.com/" target="_blank">jQuery API Documentation</a></cite>
+            <p>.on()・.toggleClass()・.animate() などのメソッドの仕様確認のために参照。</p>
+          </li>
+          <li>
+            <cite><a href="https://junpei-sugiyama.com/slick-loop/" target="_blank">じゅんぺいブログ</a></cite>
+            <p>ネイルギャラリーのスライド無限ループの参考で使用。</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">NACRE</p>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LINE</a></li>
+      </ul>
+      <p class="footer-copy">c 2025 NACRE Nail Atelier.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+  /*
+   * 参考: jQuery API Documentation
+   * https://api.jquery.com/
+   * .on()・.toggleClass()・.addClass()・.removeClass()・.animate()・.css() の使い方を参照。
+   */
+  'use strict';
+
+  $(function () {
+
+    // ── ハンバーガーメニュー ──
+    // クリックでメニューの開閉を切り替える
+    $('#hamburger').on('click', function () {
+      $(this).toggleClass('open');
+      $('#mobileMenu').toggleClass('open');
+      // メニュー表示中は背景スクロールを止める
+      if ($('#mobileMenu').hasClass('open')) {
+        $('body').css('overflow', 'hidden');
+      } else {
+        $('body').css('overflow', '');
+      }
+    });
+
+    // モバイルメニューのリンクをクリックしたらメニューを閉じる
+    $('.mobile-link').on('click', function () {
+      $('#hamburger').removeClass('open');
+      $('#mobileMenu').removeClass('open');
+      $('body').css('overflow', '');
+    });
+
+
+    // ── サービスタブ切替 ──
+    // クリックしたタブに応じてパネルを切り替える
+    $('.tab-btn').on('click', function () {
+      const tabId = $(this).attr('id').replace('btn-', 'tab-');
+
+      // すべてのボタン・パネルからactiveを外す
+      $('.tab-btn').removeClass('active');
+      $('.tab-panel').removeClass('active');
+
+      // クリックしたボタンと対応するパネルにactiveを付ける
+      $(this).addClass('active');
+      $('#' + tabId).addClass('active');
+    });
+
+
+    // ── スムーススクロール ──
+    // ページ内リンクをクリックしたとき、なめらかにスクロールする
+    $('a[href^="#"]').on('click', function (e) {
+      const href    = $(this).attr('href');
+      const $target = $(href);
+      if (!$target.length) { return; }
+      e.preventDefault();
+      const offset = 60; // ナビゲーションの高さ分ずらす
+      const top    = $target.offset().top - offset;
+      $('html, body').animate({ scrollTop: top }, 500);
+    });
+
+
+    // ── お問い合わせフォーム ──
+
+    // メッセージ入力欄の文字数をリアルタイムでカウントして表示する
+    $('#inputMessage').on('input', function () {
+      const count = $(this).val().length;
+      $('#charCount').text(count);
+    });
+
+    // 送信ボタンをクリックしたとき、入力内容を検証して確認画面を表示する
+    $('#contactForm').on('submit', function (e) {
+      e.preventDefault();
+
+      const name    = $('#inputName').val().trim();
+      const nailtechnician = $('#inputnailtechnician').val();
+      const menu    = $('#inputMenu').val();
+      const message = $('#inputMessage').val().trim();
+      let hasError  = false;
+
+      // エラーメッセージをいったんリセット
+      $('.form-error').text('');
+
+      // お名前が未入力の場合はエラーを表示する
+      if (name === '') {
+        $('#errorName').text('お名前を入力してください。');
+        hasError = true;
+      }
+
+      // エラーがあれば処理を止める
+      if (hasError) { return; }
+
+      // 入力内容を確認エリアに表示する
+      // お名前は「〇〇 様」の形に加工して表示する
+      $('#resultName').text(name + ' 様');
+      $('#resultneiltechnician').text(nailtechnician === '' ? '（未選択）' : nailtechnician);
+      $('#resultMenu').text(menu === '' ? '（未選択）' : menu);
+      $('#resultMessage').text(message);
+
+      // フォームを隠して確認エリアを表示する
+      $('#contactForm').hide();
+      $('#formResult').show();
+    });
+
+    // 「別の内容を送る」ボタンで入力フォームに戻る
+    $('#resetBtn').on('click', function () {
+      // フォームの入力内容をリセット
+      $('#contactForm')[0].reset();
+      $('#charCount').text('0');
+      $('.form-error').text('');
+
+      // 確認エリアを隠してフォームを再表示する
+      $('#formResult').hide();
+      $('#contactForm').show();
+    });
+
+
+    // ── ネイルギャラリー（ファンスライダー） ──
+
+    const CARD_WIDTH = 220;  // カード1枚の幅(px)
+    const CARD_GAP   = 20;   // カード間のすき間(px)
+    const UNIT       = CARD_WIDTH + CARD_GAP; // 1枚あたりの占有幅
+    const SPEED      = 0.5;  // 自動スクロールの速度(px/フレーム)
+    const MAX_ROT    = 14;   // 端のカードの最大回転角(deg)
+
+    // 1セット分を複製してトラックに追加する（無限ループのため）
+    $('#galleryTrack .gallery-slide').clone().appendTo('#galleryTrack');
+
+    const $outer    = $('#galleryOuter');
+    const $track    = $('#galleryTrack');
+    let $items      = $track.find('.gallery-slide');
+    const itemCount = $items.length / 2; // 複製前の枚数
+    const halfWidth = itemCount * UNIT;  // 1セット分の合計幅
+
+    let pos          = 0;
+    let isDragging   = false;
+    let dragStartX   = 0;
+    let dragStartPos = 0;
+    let autoTimer    = null;
+
+    // 各カードの見た目（回転・拡縮）を現在位置に応じて更新する
+    function updateCards() {
+      const centerX = $outer.width() / 2;
+
+      $track.css('transform', 'translateX(' + pos + 'px)');
+
+      $items.each(function (i) {
+        // このカードの中心が画面上で何pxの位置にあるか
+        const cardCenter = pos + i * UNIT + CARD_WIDTH / 2;
+        // 画面中央からの距離を -1?1 に正規化する
+        const dist  = cardCenter - centerX;
+        const ratio = Math.max(-1, Math.min(1, dist / (CARD_WIDTH * 2.5)));
+        // 距離に応じて回転・縮小を適用する
+        const rotate = ratio * MAX_ROT;
+        const scale  = 1 - Math.abs(ratio) * 0.15;
+        const zIndex = Math.round((1 - Math.abs(ratio)) * 10);
+
+        $(this).css({
+          'transform' : 'rotate(' + rotate + 'deg) scale(' + scale + ')',
+          'z-index'   : zIndex
+        });
+      });
+    }
+
+    // setInterval で一定間隔ずつ位置をずらして自動スクロールを実現する
+    // 参考: MDN Web Docs - setInterval
+    // https://developer.mozilla.org/ja/docs/Web/API/setInterval
+    function tick() {
+      pos -= SPEED;
+      // 1セット分流れたら先頭に戻す（見た目は途切れない）
+      if (pos <= -halfWidth) {
+        pos += halfWidth;
+      }
+      updateCards();
+    }
+
+    function startAuto() {
+      if (autoTimer !== null) { return; }
+      autoTimer = setInterval(tick, 16);
+    }
+
+    function stopAuto() {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+
+    // ── タッチ操作（スワイプ） ──
+    $outer.on('touchstart', function (e) {
+      stopAuto();
+      isDragging   = true;
+      dragStartX   = e.originalEvent.touches[0].clientX;
+      dragStartPos = pos;
+    });
+
+    $outer.on('touchmove', function (e) {
+      if (!isDragging) { return; }
+      const dx = e.originalEvent.touches[0].clientX - dragStartX;
+      pos = dragStartPos + dx;
+      if (pos <= -halfWidth) { pos += halfWidth; }
+      if (pos > 0)           { pos -= halfWidth; }
+      updateCards();
+    });
+
+    $outer.on('touchend', function () {
+      isDragging = false;
+      startAuto();
+    });
+
+    // ── マウスドラッグ（PC用） ──
+    $outer.on('mousedown', function (e) {
+      stopAuto();
+      isDragging   = true;
+      dragStartX   = e.clientX;
+      dragStartPos = pos;
+      $outer.css('cursor', 'grabbing');
+    });
+
+    // ドラッグ中にギャラリー外に出ても追従するよう document に設定する
+    $(document).on('mousemove', function (e) {
+      if (!isDragging) { return; }
+      const dx = e.clientX - dragStartX;
+      pos = dragStartPos + dx;
+      if (pos <= -halfWidth) { pos += halfWidth; }
+      if (pos > 0)           { pos -= halfWidth; }
+      updateCards();
+    });
+
+    $(document).on('mouseup', function () {
+      if (!isDragging) { return; }
+      isDragging = false;
+      $outer.css('cursor', 'grab');
+      startAuto();
+    });
+
+    // 初期描画して自動スクロール開始
+    updateCards();
+    startAuto();
+
+  });
+  </script>
+
+</body>
+</html>
